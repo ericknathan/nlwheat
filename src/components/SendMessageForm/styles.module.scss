@@ -27,6 +27,12 @@
   }
 }
 
+.seal {
+  position: absolute;
+  top: -7%;
+  right: 40px;
+}
+
 .userInformation {
   display: flex;
   flex-direction: column;
@@ -122,5 +128,25 @@
     &:hover {
       filter: brightness(0.9);
     }
+  }
+}
+
+.cloudButton {
+  background: #FFCD1E;
+  height: 56px;
+  width: 100%;
+  color: #09090A;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  &:hover {
+    filter: brightness(0.9);
   }
 }
