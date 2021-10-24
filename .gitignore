@@ -4,4 +4,4 @@ yarn-error.log
 yarn.lock
 
 .env
-prisma/dev.db
+src/prisma/dev.db
