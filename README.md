@@ -20,6 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Prisma](https://www.prisma.io/)
 - [JSON Web Token](https://jwt.io/)
 - [Socket.IO](https://socket.io/)
+- [Axios](https://axios-http.com/)
 
 ## 🚀 Como executar
 
