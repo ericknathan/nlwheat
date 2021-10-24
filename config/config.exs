@@ -18,7 +18,7 @@ config :heat_tags, HeatTagsWeb.Endpoint,
   live_view: [signing_salt: "7JtiZDLi"]
 
 config :heat_tags, HeatTags.Scheduler, jobs: [
-  {"* * * * * *",      {HeatTags.Tags.Count, :call, []}}
+  {"0 0 * * *",      {HeatTags.Tags.Count, :call, []}}
 ]
 
 # Configures the mailer

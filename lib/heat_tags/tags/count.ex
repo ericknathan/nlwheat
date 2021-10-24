@@ -1,8 +1,11 @@
+
 defmodule HeatTags.Tags.Count do
   alias HeatTags.Messages.Get
 
   def call do
-    Get.today_messages()
+    today_messages = Get.today_messages()
+
+    today_messages
     |> Task.async_stream(&count_words(&1.message))
     |> Enum.reduce(%{}, &sum_values(&1, &2))
     |> IO.inspect()
@@ -10,6 +13,9 @@ defmodule HeatTags.Tags.Count do
 
   defp count_words(message) do
     message
+    |> String.replace(",", "")
+    |> String.replace(".", "")
+    |> String.replace("!", "")
     |> String.split()
     |> Enum.frequencies()
   end

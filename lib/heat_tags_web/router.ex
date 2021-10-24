@@ -9,6 +9,7 @@ defmodule HeatTagsWeb.Router do
     pipe_through :api
 
     post "/message", MessagesController, :create
+    get "/words/cloud", WordsCloudController, :create
 
   end
 
